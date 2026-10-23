@@ -12,4 +12,6 @@
 
 このアプリ内ブラウザではPointer Lockが許可されず、画面に案内が出ました。CPU戦のセットと進行は確認しましたが、今回の公開用確認では通常のChrome/Edgeでのマウス固定と物理的な別窓のサイズは未検証です。既存機能を維持しています。
 
-GitHubへの実アップロードと実Pagesでの確認は公開後に追記します。写真はrecord/cpu-demo.png。履歴の最初の基準はv1.4-recordタグです。
+2026-10-24追記：GitHubの https://github.com/dybo46/online-airhockey にmainとv1.4-recordタグをアップロード済み。main/docsからのPages配信が成功し、https://dybo46.github.io/online-airhockey/ で名前決定・CPU戦開始・クリックセット・背景・音・CPU観戦を確認。CPU同士が6対2で決着し、勝者表示まで進むことを確認しました。ブラウザ警告・エラーなし。
+
+写真はrecord/cpu-demo.png。初回タグは上書きせず、公開状態の追記をmainに保存します。ローカルには初回タグから作ったZIPと自己完結したGit bundleをSHA256付きで別途保存しました。

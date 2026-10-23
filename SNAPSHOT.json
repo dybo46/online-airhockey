@@ -6,12 +6,30 @@
   "gameplayBaseline": "1.3",
   "pages": "docs",
   "selfHost": "self-host",
-  "content": {"stages":12,"randomStageTile":1,"cpuLevels":10,"shotEffects":21,"soundCandidates":46,"participants":5},
+  "content": {
+    "stages": 12,
+    "randomStageTile": 1,
+    "cpuLevels": 10,
+    "shotEffects": 21,
+    "soundCandidates": 46,
+    "participants": 5
+  },
   "protectedEffectsBaseline": "0.7",
   "upstreamManifest": "UPSTREAM.json",
   "authorServerLinked": false,
-  "githubUploaded": false,
+  "githubUploaded": true,
   "repositoryUrl": "https://github.com/dybo46/online-airhockey",
   "demoUrl": "https://dybo46.github.io/online-airhockey/",
-  "license": "not yet selected; third-party audio keeps its individual licenses"
+  "license": "not yet selected; third-party audio keeps its individual licenses",
+  "published": "2026-10-24",
+  "verification": {
+    "publicTests": 6,
+    "gameTests": 54,
+    "demoApiRequests": 0,
+    "pagesCpuMatchFinished": true,
+    "pagesCpuScore": [
+      6,
+      2
+    ]
+  }
 }
