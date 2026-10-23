@@ -1,0 +1,13 @@
+{
+  "name": "online-airhockey",
+  "version": "1.4.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=24"},
+  "scripts": {
+    "demo": "node scripts/serve-demo.mjs",
+    "build:demo": "node scripts/build-demo.mjs",
+    "test": "node --test --test-isolation=none tests/*.test.mjs",
+    "test:self-host": "node --test --test-isolation=none self-host/tests/*.test.mjs"
+  }
+}

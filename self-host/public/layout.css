@@ -1,0 +1,72 @@
+/* Keep the rink visible while tuning the longer list of practice controls. */
+aside { align-self: start; }
+#settingsBody { max-height: 530px; overflow-y: auto; padding-right: 9px; scrollbar-color: #506a82 #101c2b; scrollbar-width: thin; }
+.practicing .lobby-panel { display: none; }
+.practicing .cpu-panel #startPractice,
+.practicing .cpu-panel > p,
+.practicing .cpu-panel .check { display: none; }
+.practicing #settingsBody { max-height: max(260px, calc(100vh - 520px)); }
+.practicing .cpu-panel .segmented { margin-bottom: 0; }
+.practicing aside { position: sticky; top: 16px; }
+.settings-panel > p { margin-bottom: 12px; }
+.skin-button { height: 76px; }
+.audio-customizer { margin: 14px 0; border: 1px solid #40516a; border-radius: 7px; padding: 11px; }
+.audio-customizer summary { font-size: 12px; color: #ffe06a; cursor: pointer; }
+.audio-customizer > p { margin: 12px 0; }
+.audio-customizer > input { width: 100%; accent-color: #4ce0f5; }
+.audio-row { margin: 12px 0; }
+.audio-row > label { display: block; font-size: 11px; margin-bottom: 5px; }
+.audio-row .name-row select { max-width: 100%; }
+.audio-customizer a { color: #4ce0f5; }
+.watch-setup { border-top: 1px solid #40516a; margin-top: 16px; padding-top: 17px; }
+.watch-setup h3 { color: #ffe06a; margin-bottom: 16px; }
+.watch-setup select,.watch-status select { padding: 5px; font-size: 11px; }
+.watch-status { padding: 14px; margin-top: 14px; border: 1px solid #3c6e7b; background: #122638; border-radius: 8px; }
+.watch-status p { white-space: pre-line; font-size: 12px; line-height: 1.9; margin: 8px 0 0; font-variant-numeric: tabular-nums; }
+.practicing #watchSetup { display: none; }
+.watching #difficulties { display: none; }
+
+#difficulties { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:6px; }
+.watching #difficulties { display:none; }
+
+.scoreboard .advantage { text-decoration:underline; text-underline-offset:7px; text-decoration-thickness:3px; }
+
+.active-rules { border:1px solid #3c6e7b; background:#122638; border-radius:8px; padding:14px; margin:0 0 14px; }
+.active-rules > strong { color:#ffe06a; font-size:14px; }
+.active-rules p { font-size:12px; margin:8px 0; line-height:1.7; }
+.active-rules details { font-size:12px; color:#b8ccde; }
+.active-rules summary { cursor:pointer; }
+.active-rules dl { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:6px; margin:12px 0 0; }
+.active-rules dl > div { min-width:0; padding:6px 4px; border:1px solid #355167; border-radius:5px; background:#0d1c2b; text-align:center; }
+.active-rules dt { font-size:10px; white-space:nowrap; line-height:1.6; }
+.active-rules dd { margin:2px 0 0; color:#4ce0f5; font-size:14px; font-weight:700; font-variant-numeric:tabular-nums; }
+.hit-readout { margin:0 0 12px; }
+.court-overlay.setting-up { background:#08172d22; justify-content:flex-end; padding:0 18px 5%; gap:10px; }
+.court-overlay.setting-up strong { font-size:clamp(24px,3vw,40px); }
+.court-overlay.setting-up span { font-size:12px; }
+.court-overlay.setting-up button { padding:8px 16px; }
+.puck-colors { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin:4px 0 18px; padding:12px; border:1px solid #60738a; border-radius:10px; }
+.puck-colors label { display:flex; gap:6px; align-items:center; cursor:pointer; font-size:14px; }
+.puck-colors input { width:17px; height:17px; accent-color:#35dbf5; }
+.puck-colors small { grid-column:1 / -1; color:#95a8bc; font-size:11px; }
+.puck-swatch { display:inline-block; width:18px; height:18px; border-radius:50%; border:2px solid #9aa8b7; box-shadow:0 0 0 1px #192d42; vertical-align:middle; }
+
+#defaultsButton { margin:0 0 12px; }
+.win-count { display:inline-block; color:#ffe06a; font:700 11px system-ui; margin-left:6px; }
+.window-handoff { position:fixed; inset:0; z-index:100; display:grid; place-items:center; background:#06101af2; padding:24px; }
+.window-handoff > div { max-width:560px; padding:30px; border:1px solid #4c647d; border-radius:14px; background:#131f30; }
+.window-handoff p { font-size:14px; color:#b7c8d8; }
+#practiceTools { margin:0 0 14px; align-items:center; }
+.score-actions { display:inline-flex; gap:8px; }
+#practiceTools #forfeitButton { margin-left:0; }
+/* Reserve room for the score, mouse hint and complete action row. */
+body:has(#room:not([hidden])) .masthead { height:64px; padding:12px 28px; }
+body:has(#room:not([hidden])) main { padding:12px 28px; }
+.room-heading { margin-bottom:10px; }
+.room-heading h1 { font-size:24px; margin:0; }
+.scoreboard { height:60px; }
+.scoreboard strong { font-size:36px; }
+.canvas-wrap { width:min(100%,calc((100dvh - 310px) * 1.785714)); margin-inline:auto; }
+.play-footer { padding:8px 0; }
+
+.game-link{display:flex;text-decoration:none;color:inherit;border:1px solid #71d8ba66;border-radius:10px;padding:12px;gap:10px;background:#193b3650}.game-link:hover{background:#285e525e;border-color:#9af1d7}.game-link span:last-child{color:#b7eed7;font-weight:700}

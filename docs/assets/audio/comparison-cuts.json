@@ -1,0 +1,42 @@
+[
+  {
+    "file": "soundbible-puck.wav",
+    "start": 0.10941666666666666,
+    "duration": 0.34
+  },
+  {
+    "file": "soundbible-stick.wav",
+    "start": 0.089125,
+    "duration": 0.34
+  },
+  {
+    "file": "budgetpixel-air-01.wav",
+    "start": 2.665,
+    "duration": 0.24
+  },
+  {
+    "file": "budgetpixel-air-02.wav",
+    "start": 1.9,
+    "duration": 0.24
+  },
+  {
+    "file": "air-dry-01.wav",
+    "start": 3.7132916666666667,
+    "duration": 0.16
+  },
+  {
+    "file": "air-dry-02.wav",
+    "start": 4.863291666666667,
+    "duration": 0.16
+  },
+  {
+    "file": "air-dry-03.wav",
+    "start": 5.953291666666667,
+    "duration": 0.16
+  },
+  {
+    "file": "air-dry-04.wav",
+    "start": 9.443291666666667,
+    "duration": 0.16
+  }
+]

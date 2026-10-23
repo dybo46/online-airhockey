@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>COMIC HOCKEY · v1.4 · CPU DEMO</title><link rel="stylesheet" href="./style.css"><link rel="stylesheet" href="./layout.css"><link rel="stylesheet" href="./demo.css"></head>
+<body>
+  <header class="masthead"><a href="./" class="wordmark">COMIC<span>HOCKEY</span><small>友達と、ひとりでも。</small></a><div class="head-right"><span class="badge">PC / MOUSE</span><button id="popupButton" class="secondary">別ウィンドウで開く ↗</button><button id="historyButton" class="quiet">v1.4 · 更新履歴</button><span id="connection" class="connection">接続を確認中</span></div></header>
+  <main>
+    <section id="entry" class="entry-layout">
+      <div class="entry-hero"><span class="eyebrow">YOUR LITTLE ARCADE</span><h1 id="heroTagline">一打で、<br><em>空気を変えろ。</em></h1><p>左右のゴール。ぎりぎりの一撃。<br>CPUで試して、自分たちのホッケーを見つけよう。</p><div class="hero-rink"><div class="hero-mallet one"></div><div class="hero-puck"></div><div class="hero-mallet two"></div><b>SMASH!</b></div><div class="feature-pills"><span>10段階のCPU</span><span>12ステージ＋ランダム</span><span>数値で調整・保存</span></div></div>
+      <div class="panel entry-card"><span class="eyebrow">JOIN THE TABLE</span><h2>CPUデモをはじめる</h2><p class="muted">CPU対戦・CPU観戦の作品デモ。ネット対戦サーバーへ接続しません。</p><label for="nameInput">プレイヤー名 <span class="muted">6文字まで</span></label><div class="name-row"><input id="nameInput" autocomplete="off" aria-describedby="nameNote"><button id="randomName" class="secondary">ランダム</button></div><p id="nameNote" class="small muted">仮の名前リストです。後から追加・変更できます。</p><p id="entryError" class="error" role="alert"></p><button id="joinButton" class="primary wide">OK · プレイ画面へ <span>↗</span></button><p id="capacity" class="small muted"></p><p class="small muted">独立したホッケープロジェクトです。</p></div>
+    </section>
+    <section id="room" hidden>
+      <div class="room-heading"><div><span class="eyebrow" id="modeEyebrow">THE LOBBY</span><h1 id="roomTitle">対戦待受</h1></div><div class="room-actions"><span id="myName" class="badge"></span><button id="exitButton" class="quiet">退出する</button></div></div>
+      <div class="play-layout">
+        <div class="arena-column">
+          <div class="arena-top"><div><span id="matchBadge" class="live-dot">練習の準備OK</span><span id="stageName" class="muted">BEACH</span></div><span id="ruleLabel" class="small">6本先取 · デュースあり</span></div>
+          <div class="scoreboard"><span id="leftName">あなた</span><strong><span id="leftScore">0</span><i>:</i><span id="rightScore">0</span></strong><span id="rightName">CPU Lv.3</span></div>
+          <div class="canvas-wrap"><canvas id="rink" width="1000" height="560" aria-label="ホッケーのコート。マウスで移動、左クリックでセットまたは強打"></canvas><div id="courtOverlay" class="court-overlay"><strong id="overlayTitle">LET’S PLAY!</strong><span id="overlayText">右の「CPUと戦う」から練習できます</span><button id="serveButton" class="primary" hidden>クリックでセット</button></div></div>
+          <div class="play-footer"><span id="playHint">自陣内をマウスで移動 · 接触直前の左クリックで強打</span><span id="shotState" class="shot-state">強打 READY</span></div>
+          <div class="toolbar" id="practiceTools" hidden><button id="pauseButton" class="secondary">一時停止</button><button id="resetPosition" class="quiet">配置をリセット</button><span class="score-actions"><button id="resetScore" class="quiet">得点をリセット</button><button id="forfeitButton" class="danger" hidden>降参する</button></span><button id="quitPractice" class="danger">CPU戦をやめる</button></div>
+          <div id="hitReadout" class="hit-readout">タイミング記録：まだ打撃がありません</div>
+          <div class="skin-section"><div class="section-label"><h3>STAGES <span>ステージスキン</span></h3><span class="small muted">演出はステージと別にランダム</span></div><div id="skinGrid" class="skin-grid"></div></div>
+          <div id="resultNotice" class="result-notice" aria-live="polite"></div>
+        </div>
+        <aside>
+          <section class="panel lobby-panel"><div class="panel-heading"><h2>参加者 <small id="playerCount">0 / 5</small></h2><span class="small muted">CPU専用</span></div><ol id="roster" class="roster"></ol><button id="readyButton" class="primary wide">準備OK</button><p class="small muted" id="queueHelp">準備OKの人を上から2人選んで対戦します。</p></section>
+          <section class="panel cpu-panel"><span class="eyebrow">PRACTICE LAB</span><h2>ひとりで、試そう。</h2><div class="section-label"><label>CPUの難易度</label><span id="difficultyName" class="small muted">ふつう</span></div><div id="difficulties" class="segmented"></div><button id="startPractice" class="coral wide">CPUと戦う <span>↗</span></button><p class="small muted">いつでも終了OK。練習中は対人戦の候補から外れます。</p><label class="check muted"><input type="checkbox" disabled>挑戦を受ける <small>今後追加予定</small></label></section>
+          <section class="panel settings-panel"><div class="panel-heading"><h2>あなたの設定</h2><button id="toggleSettings" class="quiet small">折りたたむ</button></div><button id="defaultsButton" class="quiet wide">デフォルトに戻す</button><p class="small muted">現在は調整用の仮デフォルトです。</p><p class="small muted">このブラウザに自動保存。練習と、あなたがルール提供者になる対人戦に使用。試合中の変更は次回から。</p><div id="settingsBody"><div class="section-label"><label for="winTarget">勝利条件</label><select id="winTarget"><option value="6">6本先取</option><option value="11">11本先取</option><option value="0">勝敗なしで練習</option></select></div><div id="settingsList"></div><label class="check"><input id="soundOn" type="checkbox" checked>効果音</label><label class="check"><input id="effectsOn" type="checkbox" checked>文字・軌跡の演出</label><label class="check"><input id="readoutOn" type="checkbox" checked>打撃タイミングを数値で記録</label><p class="small muted">CPU練習・観戦は変更時に一時停止・配置リセット。対人戦の変更は次回から。</p><div class="preset-box"><label for="presetName">設定に名前を付けて保存</label><div class="name-row"><input id="presetName" maxlength="30" placeholder="例：ゴール13・速さ7"><button id="savePreset" class="secondary">保存</button></div><div class="name-row"><select id="presets"><option value="">保存した設定を選択</option></select><button id="loadPreset" class="quiet">読込</button><button id="deletePreset" class="quiet">削除</button></div><button id="exportPreset" class="quiet wide">設定をファイルに書き出す</button><label class="import-label">設定ファイルを読み込む<input id="importPreset" type="file" accept="application/json,.json"></label></div></div></section>
+        </aside>
+      </div>
+    </section>
+    <footer>COMIC HOCKEY <b>v1.4</b> <span>PC専用 · CPU DEMO · NO GAME SERVER</span> · <a href="./about.html">この作品・公開の目的</a> · <a href="https://github.com/dybo46/online-airhockey">GitHub</a></footer>
+  </main>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <dialog id="historyDialog"><span class="eyebrow">VERSION ARCHIVE</span><h2>制作記録 v1.4</h2><p>現時点のゲーム内容・入室・オンライン対戦・CPU戦を記録。作者の運用環境への入口は含みません。</p><p>記録と更新内容はGitHubのHISTORY.md・CHANGELOG.mdをご覧ください。</p><button id="closeHistory" class="primary">閉じる</button></dialog>
+  <script type="module" src="./app.js"></script>
+</body></html>

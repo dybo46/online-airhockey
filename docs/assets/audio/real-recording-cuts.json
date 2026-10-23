@@ -1,0 +1,42 @@
+[
+  {
+    "file": "air-hit-01.wav",
+    "startSeconds": 3.7113,
+    "duration": 0.22
+  },
+  {
+    "file": "air-hit-02.wav",
+    "startSeconds": 4.8613,
+    "duration": 0.22
+  },
+  {
+    "file": "air-hit-03.wav",
+    "startSeconds": 5.9513,
+    "duration": 0.22
+  },
+  {
+    "file": "air-hit-04.wav",
+    "startSeconds": 9.4413,
+    "duration": 0.22
+  },
+  {
+    "file": "air-hit-05.wav",
+    "startSeconds": 10.6913,
+    "duration": 0.22
+  },
+  {
+    "file": "air-hit-06.wav",
+    "startSeconds": 12.8613,
+    "duration": 0.22
+  },
+  {
+    "file": "air-hit-07.wav",
+    "startSeconds": 14.0413,
+    "duration": 0.22
+  },
+  {
+    "file": "air-hit-08.wav",
+    "startSeconds": 15.3913,
+    "duration": 0.22
+  }
+]

@@ -1,0 +1,198 @@
+[
+  {
+    "id": "beach",
+    "name": "ビーチ",
+    "image": "/assets/stages-v06/beach.png",
+    "grid": [
+      1,
+      1
+    ],
+    "cell": [
+      0,
+      0
+    ],
+    "dark": false,
+    "accent": "#ffb927"
+  },
+  {
+    "id": "neon",
+    "name": "ネオン",
+    "image": "/assets/stages-v06/neon.png",
+    "grid": [
+      1,
+      1
+    ],
+    "cell": [
+      0,
+      0
+    ],
+    "dark": true,
+    "accent": "#d861ff"
+  },
+  {
+    "id": "comic",
+    "name": "アメコミ",
+    "image": "/assets/stages-v06/comic.png",
+    "grid": [
+      1,
+      1
+    ],
+    "cell": [
+      0,
+      0
+    ],
+    "dark": false,
+    "accent": "#ffcf25"
+  },
+  {
+    "id": "ice",
+    "name": "アイス",
+    "image": "/assets/stages-v06/ice.png",
+    "grid": [
+      1,
+      1
+    ],
+    "cell": [
+      0,
+      0
+    ],
+    "dark": false,
+    "accent": "#83e5ff"
+  },
+  {
+    "id": "lava",
+    "name": "火山",
+    "image": "/assets/stages-v06/lava.png",
+    "grid": [
+      1,
+      1
+    ],
+    "cell": [
+      0,
+      0
+    ],
+    "dark": false,
+    "accent": "#ff742b"
+  },
+  {
+    "id": "space",
+    "name": "宇宙",
+    "image": "/assets/stages-v06/space.png",
+    "grid": [
+      1,
+      1
+    ],
+    "cell": [
+      0,
+      0
+    ],
+    "dark": true,
+    "accent": "#81a2ff"
+  },
+  {
+    "id": "japan",
+    "name": "和風・祭り",
+    "image": "/assets/stages-v06/japan.png",
+    "grid": [
+      1,
+      1
+    ],
+    "cell": [
+      0,
+      0
+    ],
+    "dark": false,
+    "accent": "#ff769b"
+  },
+  {
+    "id": "retro",
+    "name": "レトロポップ",
+    "image": "/assets/stages-v06/retro.png",
+    "grid": [
+      1,
+      1
+    ],
+    "cell": [
+      0,
+      0
+    ],
+    "dark": false,
+    "accent": "#f97ebd"
+  },
+  {
+    "id": "classic",
+    "name": "基本ホッケー",
+    "dark": false,
+    "accent": "#e85a60",
+    "image": "/assets/stages-v06/classic.png",
+    "grid": [
+      1,
+      1
+    ],
+    "cell": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "arcade",
+    "name": "白いアーケード",
+    "dark": false,
+    "accent": "#51d6ec",
+    "image": "/assets/stages-v06/arcade.png",
+    "grid": [
+      1,
+      1
+    ],
+    "cell": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "billiards",
+    "name": "ビリヤード",
+    "dark": true,
+    "accent": "#dfbb69",
+    "image": "/assets/stages-v06/billiards.png",
+    "grid": [
+      1,
+      1
+    ],
+    "cell": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "velvet",
+    "name": "ワイン・ベルベット",
+    "dark": true,
+    "accent": "#e6c17a",
+    "image": "/assets/stages-v06/velvet.png",
+    "grid": [
+      1,
+      1
+    ],
+    "cell": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "random",
+    "name": "ランダム",
+    "image": "/assets/stages-v06/random.png",
+    "grid": [
+      1,
+      1
+    ],
+    "cell": [
+      0,
+      0
+    ],
+    "dark": false,
+    "accent": "#b4bbc3",
+    "random": true
+  }
+]

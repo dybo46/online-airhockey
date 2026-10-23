@@ -1,0 +1,545 @@
+{
+  "schema": 1,
+  "sourceVersion": "1.4",
+  "updated": "2026-10-23",
+  "note": "開発フォルダーの場所・履歴・接続先は記録しない。ホワイトリストのみ取り込み、公開用変換後のハッシュも記録。",
+  "files": {
+    "server.mjs": {
+      "sourceSha256": "4377043d57c6e4050621fe6cf1590290da2fb9a091ce5a4ef24a7d202596820c",
+      "exportSha256": "4377043d57c6e4050621fe6cf1590290da2fb9a091ce5a4ef24a7d202596820c"
+    },
+    "lobby.mjs": {
+      "sourceSha256": "ad8e2b9b160ad865c05a3c110bed96a332dbf0f8f64e2c6ed0e57b4fcaaede95",
+      "exportSha256": "ad8e2b9b160ad865c05a3c110bed96a332dbf0f8f64e2c6ed0e57b4fcaaede95"
+    },
+    "public/app.js": {
+      "sourceSha256": "67024107754eb97f41f97ad08da20b1ee0905600274e499d9f94569b6c4b9f3d",
+      "exportSha256": "194fa280728df802e95f8b4bc3c59d9a92037749f082a39e8d02bdb400fe646c"
+    },
+    "public/assets/audio/air-dry-01.wav": {
+      "sourceSha256": "0006a47300736f39166a98cd358093cc7a292ae5d160e96118f679d8c25d9b7c",
+      "exportSha256": "0006a47300736f39166a98cd358093cc7a292ae5d160e96118f679d8c25d9b7c"
+    },
+    "public/assets/audio/air-dry-02.wav": {
+      "sourceSha256": "546ad7580f49ff56ba8ecc20608c6b271321df1f8e11b1fe7826d7e1a5a06d68",
+      "exportSha256": "546ad7580f49ff56ba8ecc20608c6b271321df1f8e11b1fe7826d7e1a5a06d68"
+    },
+    "public/assets/audio/air-dry-03.wav": {
+      "sourceSha256": "331432e5e83a5c633cfabcd33f5d60acb5855f0af0c7ff03c74de6a0ef835098",
+      "exportSha256": "331432e5e83a5c633cfabcd33f5d60acb5855f0af0c7ff03c74de6a0ef835098"
+    },
+    "public/assets/audio/air-dry-04.wav": {
+      "sourceSha256": "82229223f326f6d787b5fb4f5543d9c19f13d6a88fae3295eb42f739ad281248",
+      "exportSha256": "82229223f326f6d787b5fb4f5543d9c19f13d6a88fae3295eb42f739ad281248"
+    },
+    "public/assets/audio/air-hit-01.wav": {
+      "sourceSha256": "dca15baa28861dbdb820e5e99c6b82820a012942020cd1328f46a0354b18502c",
+      "exportSha256": "dca15baa28861dbdb820e5e99c6b82820a012942020cd1328f46a0354b18502c"
+    },
+    "public/assets/audio/air-hit-02.wav": {
+      "sourceSha256": "4002be584557d3adcc97f06ed28edb4dbe0d6dbcf1745c7053ebf9fa66631ad4",
+      "exportSha256": "4002be584557d3adcc97f06ed28edb4dbe0d6dbcf1745c7053ebf9fa66631ad4"
+    },
+    "public/assets/audio/air-hit-03.wav": {
+      "sourceSha256": "31450857179c18cdc00081c4066107989a3894c14a375132990981896fa43987",
+      "exportSha256": "31450857179c18cdc00081c4066107989a3894c14a375132990981896fa43987"
+    },
+    "public/assets/audio/air-hit-04.wav": {
+      "sourceSha256": "b51f0a3ad7fee9333e0099a73ae0078152c5f25a35219d28f9daa81a857e96af",
+      "exportSha256": "b51f0a3ad7fee9333e0099a73ae0078152c5f25a35219d28f9daa81a857e96af"
+    },
+    "public/assets/audio/air-hit-05.wav": {
+      "sourceSha256": "caa38cd577b49b0ab957779d29e69d8ced80cfc4ffef7caa2127490a6e522eeb",
+      "exportSha256": "caa38cd577b49b0ab957779d29e69d8ced80cfc4ffef7caa2127490a6e522eeb"
+    },
+    "public/assets/audio/air-hit-06.wav": {
+      "sourceSha256": "dc11dd2025e877e6fcf6a8b2677df70376fb9f0ee91b5e30f44b560be34272cd",
+      "exportSha256": "dc11dd2025e877e6fcf6a8b2677df70376fb9f0ee91b5e30f44b560be34272cd"
+    },
+    "public/assets/audio/air-hit-07.wav": {
+      "sourceSha256": "206dae22f415c6dcb4e8c2885a3562fb9452a1c4893fcc5ef6b9e4064c3d97ff",
+      "exportSha256": "206dae22f415c6dcb4e8c2885a3562fb9452a1c4893fcc5ef6b9e4064c3d97ff"
+    },
+    "public/assets/audio/air-hit-08.wav": {
+      "sourceSha256": "9e7879574786b9436329773aaa9b18e5fe1901297e300b833cdee00aa3eeb5fe",
+      "exportSha256": "9e7879574786b9436329773aaa9b18e5fe1901297e300b833cdee00aa3eeb5fe"
+    },
+    "public/assets/audio/air-hockey-krb21-118604.mp3": {
+      "sourceSha256": "24d9c1519dc42324d662e945e8a5137f3b49003cea9fd234a50ea5fcb74b15d3",
+      "exportSha256": "24d9c1519dc42324d662e945e8a5137f3b49003cea9fd234a50ea5fcb74b15d3"
+    },
+    "public/assets/audio/budgetpixel-air-01.wav": {
+      "sourceSha256": "b94da074c97aebbfe0a486a0dae3f605fc91f8f719ba1eece61302cd86bebbc6",
+      "exportSha256": "b94da074c97aebbfe0a486a0dae3f605fc91f8f719ba1eece61302cd86bebbc6"
+    },
+    "public/assets/audio/budgetpixel-air-02.wav": {
+      "sourceSha256": "9ddbd149d0f031b47b9b1787cfae307128afa108f27b3e2c9bedfc08fd14d4ea",
+      "exportSha256": "9ddbd149d0f031b47b9b1787cfae307128afa108f27b3e2c9bedfc08fd14d4ea"
+    },
+    "public/assets/audio/comparison-cuts.json": {
+      "sourceSha256": "0f9515385aaeac6c7c284d42c04ebe7970fb7be6a4febea3e43dc835f7ea1859",
+      "exportSha256": "f9641c05202db95db8cbdc203a088408717aabeff0377036db52bf6e933c7c15"
+    },
+    "public/assets/audio/CREDITS.md": {
+      "sourceSha256": "acdc6122d50c04789d80456833437b0ee20d5116f764791826bd08a07ec17448",
+      "exportSha256": "acdc6122d50c04789d80456833437b0ee20d5116f764791826bd08a07ec17448"
+    },
+    "public/assets/audio/goal-clunk-a.wav": {
+      "sourceSha256": "def521cd2c80b7fef327fe8580f8e404ab625e6076b621f4ed659d533dece191",
+      "exportSha256": "def521cd2c80b7fef327fe8580f8e404ab625e6076b621f4ed659d533dece191"
+    },
+    "public/assets/audio/goal-clunk-b.wav": {
+      "sourceSha256": "20384d64ef8264ecf56dcb456f9d43f24d7c0aec86559f8a1d39bc90eb35ec56",
+      "exportSha256": "20384d64ef8264ecf56dcb456f9d43f24d7c0aec86559f8a1d39bc90eb35ec56"
+    },
+    "public/assets/audio/highDown.ogg": {
+      "sourceSha256": "cdbea353b2e435b4f869c7b045af81079c5d5eb81cfbbc805013ccc3a7a0f36a",
+      "exportSha256": "cdbea353b2e435b4f869c7b045af81079c5d5eb81cfbbc805013ccc3a7a0f36a"
+    },
+    "public/assets/audio/highUp.ogg": {
+      "sourceSha256": "cbc1c3c7ccf5d7903818144a4c3f5b2ed2385095792f29d8d7c76360ba4fa559",
+      "exportSha256": "cbc1c3c7ccf5d7903818144a4c3f5b2ed2385095792f29d8d7c76360ba4fa559"
+    },
+    "public/assets/audio/impactMetal_light_000.ogg": {
+      "sourceSha256": "33b5e6e37c6e9d54e07bf5a89b12c76e879f40c1ea83cdd82714df1d6f9fec6d",
+      "exportSha256": "33b5e6e37c6e9d54e07bf5a89b12c76e879f40c1ea83cdd82714df1d6f9fec6d"
+    },
+    "public/assets/audio/impactMetal_light_001.ogg": {
+      "sourceSha256": "fba69c467ddd85da7b1d82e259f936b876d9ba6a3d6f1b24bdd10468e46bfe08",
+      "exportSha256": "fba69c467ddd85da7b1d82e259f936b876d9ba6a3d6f1b24bdd10468e46bfe08"
+    },
+    "public/assets/audio/impactMetal_light_002.ogg": {
+      "sourceSha256": "25a96f90a9a1f88a531e824e126f0519504625e5635e65a72e4f31611428db29",
+      "exportSha256": "25a96f90a9a1f88a531e824e126f0519504625e5635e65a72e4f31611428db29"
+    },
+    "public/assets/audio/impactMetal_light_003.ogg": {
+      "sourceSha256": "92d5db6bfc672d9dc1b4f390b2900504f013187fa36335472554fafefa9050b1",
+      "exportSha256": "92d5db6bfc672d9dc1b4f390b2900504f013187fa36335472554fafefa9050b1"
+    },
+    "public/assets/audio/impactPlate_light_000.ogg": {
+      "sourceSha256": "6e797cf8a5bfc52d7ed5eb47c227974c1cf2a674954fec5b539cea7d62c7282c",
+      "exportSha256": "6e797cf8a5bfc52d7ed5eb47c227974c1cf2a674954fec5b539cea7d62c7282c"
+    },
+    "public/assets/audio/impactWood_heavy_000.ogg": {
+      "sourceSha256": "15ff82332f342c30e469215539e1cc57e11b221aa2cf7e11e811d313a9927f3d",
+      "exportSha256": "15ff82332f342c30e469215539e1cc57e11b221aa2cf7e11e811d313a9927f3d"
+    },
+    "public/assets/audio/impactWood_light_000.ogg": {
+      "sourceSha256": "eb45e35b4bed784d3f120de4afec4b0d6ac09d9e143cce8cfcb7d739e1b1f3c3",
+      "exportSha256": "eb45e35b4bed784d3f120de4afec4b0d6ac09d9e143cce8cfcb7d739e1b1f3c3"
+    },
+    "public/assets/audio/impactWood_light_001.ogg": {
+      "sourceSha256": "4b76bf3ccc8e60d19188f3165b778a7817786faa6887c55d9049bcbeef3b425f",
+      "exportSha256": "4b76bf3ccc8e60d19188f3165b778a7817786faa6887c55d9049bcbeef3b425f"
+    },
+    "public/assets/audio/impactWood_light_002.ogg": {
+      "sourceSha256": "b183cf7a5bd783817e0e4b82af34ac6658fa1927049089dadc8b15c2ecc771dc",
+      "exportSha256": "b183cf7a5bd783817e0e4b82af34ac6658fa1927049089dadc8b15c2ecc771dc"
+    },
+    "public/assets/audio/impactWood_medium_000.ogg": {
+      "sourceSha256": "1723a9fd25103ed41af06054814e84e65f4a772bac86ab2dc927da93d9592ff5",
+      "exportSha256": "1723a9fd25103ed41af06054814e84e65f4a772bac86ab2dc927da93d9592ff5"
+    },
+    "public/assets/audio/impactWood_medium_001.ogg": {
+      "sourceSha256": "15271dbe8e2872dbb0ff1aeb7b12b2d2b92b7c1951c88532b9ab9158c36dfc73",
+      "exportSha256": "15271dbe8e2872dbb0ff1aeb7b12b2d2b92b7c1951c88532b9ab9158c36dfc73"
+    },
+    "public/assets/audio/jingles_HIT00.ogg": {
+      "sourceSha256": "e23d8c9e971a4e34484bc834a3ec1d560811ec6f5edd5efa2c61e583c18c504a",
+      "exportSha256": "e23d8c9e971a4e34484bc834a3ec1d560811ec6f5edd5efa2c61e583c18c504a"
+    },
+    "public/assets/audio/jingles_HIT01.ogg": {
+      "sourceSha256": "ddca9df332d7cdab525bbbe62ca26e9d61aa64bfa626d9516d5c53eb91c45322",
+      "exportSha256": "ddca9df332d7cdab525bbbe62ca26e9d61aa64bfa626d9516d5c53eb91c45322"
+    },
+    "public/assets/audio/jingles_HIT02.ogg": {
+      "sourceSha256": "1ebd52ba108c0e749d2814c54e44bba6c39d111fa30d025fddfac70538e0e241",
+      "exportSha256": "1ebd52ba108c0e749d2814c54e44bba6c39d111fa30d025fddfac70538e0e241"
+    },
+    "public/assets/audio/jingles_NES02.ogg": {
+      "sourceSha256": "2c0b9dcc14bdae6d66ecb40d0351e61b4b2fc570e7b13821974e2057f07c93e7",
+      "exportSha256": "2c0b9dcc14bdae6d66ecb40d0351e61b4b2fc570e7b13821974e2057f07c93e7"
+    },
+    "public/assets/audio/jingles_NES03.ogg": {
+      "sourceSha256": "64b146c4b737d4a74d60316554bdb667cfbe20681a71722948c5f70f83af7d92",
+      "exportSha256": "64b146c4b737d4a74d60316554bdb667cfbe20681a71722948c5f70f83af7d92"
+    },
+    "public/assets/audio/laser1.ogg": {
+      "sourceSha256": "0bf468769b48a834dc1c6e38e457f2c71159b010225a9aedf84316795e8cc3e5",
+      "exportSha256": "0bf468769b48a834dc1c6e38e457f2c71159b010225a9aedf84316795e8cc3e5"
+    },
+    "public/assets/audio/laser2.ogg": {
+      "sourceSha256": "50470d64f9397855e5d9a334484da9c5232b3e0524c52f088b8a73822bd89f45",
+      "exportSha256": "50470d64f9397855e5d9a334484da9c5232b3e0524c52f088b8a73822bd89f45"
+    },
+    "public/assets/audio/laser3.ogg": {
+      "sourceSha256": "caede23d2b65299acdc4e9cab16d06c247d69c7ca1c74caa5e9da21cbdbc1400",
+      "exportSha256": "caede23d2b65299acdc4e9cab16d06c247d69c7ca1c74caa5e9da21cbdbc1400"
+    },
+    "public/assets/audio/laser4.ogg": {
+      "sourceSha256": "13f34561740aadbd3438b971dfe248cf56ea09d333eb7a0278561e09e27c3557",
+      "exportSha256": "13f34561740aadbd3438b971dfe248cf56ea09d333eb7a0278561e09e27c3557"
+    },
+    "public/assets/audio/laser5.ogg": {
+      "sourceSha256": "8d7b30b35112bedf4dd6f03796a5f33af85414b02947187e4063819fd80cf3e2",
+      "exportSha256": "8d7b30b35112bedf4dd6f03796a5f33af85414b02947187e4063819fd80cf3e2"
+    },
+    "public/assets/audio/laser6.ogg": {
+      "sourceSha256": "cec018b67fdd9a857e692be0596cec070617346853e5341c3e2df3aae950473d",
+      "exportSha256": "cec018b67fdd9a857e692be0596cec070617346853e5341c3e2df3aae950473d"
+    },
+    "public/assets/audio/License-digital.txt": {
+      "sourceSha256": "654d24e000d1c3b2a1d2264151f49e273e8a26d24e26e9bffc2aeb48cea93815",
+      "exportSha256": "48ac15b3c34deb0a7cddc80a43302654dc9e4cb23dad38fc620a6f70be2d55cd"
+    },
+    "public/assets/audio/License-impact.txt": {
+      "sourceSha256": "b49aa9c56b04528b95913de13e506a0f7c5e807b9925db9bfef86af1f91120db",
+      "exportSha256": "ea4317db185cf401cb496ad5bb370cf1eee4a0a234c4df2515e37dacab12bcab"
+    },
+    "public/assets/audio/License-jingles.txt": {
+      "sourceSha256": "373b1c880ee6c7a83c1ccf209f251cf45fc9ea9b1f0330844fa7be64a401adc4",
+      "exportSha256": "c2d2cc87aa90fa7c5ad7b8280f8c771ccc75dc1c7da825a44423b4d77aac9b18"
+    },
+    "public/assets/audio/powerUp1.ogg": {
+      "sourceSha256": "8c361b624b560c0bc30ea3063b71212bc30caebf425c9df2481c13b25561485c",
+      "exportSha256": "8c361b624b560c0bc30ea3063b71212bc30caebf425c9df2481c13b25561485c"
+    },
+    "public/assets/audio/powerUp2.ogg": {
+      "sourceSha256": "83786b43d828a399e14ac20604b63a60ca05385977f5477d00304c2adc696204",
+      "exportSha256": "83786b43d828a399e14ac20604b63a60ca05385977f5477d00304c2adc696204"
+    },
+    "public/assets/audio/powerUp3.ogg": {
+      "sourceSha256": "59e7591f7a068882767bc1fd61edabf479b78787466d3a70bc49dfa0533777d2",
+      "exportSha256": "59e7591f7a068882767bc1fd61edabf479b78787466d3a70bc49dfa0533777d2"
+    },
+    "public/assets/audio/powerUp4.ogg": {
+      "sourceSha256": "df6992456056af760815460b66d2ca1c3a07c200cca26325db5820b90104d177",
+      "exportSha256": "df6992456056af760815460b66d2ca1c3a07c200cca26325db5820b90104d177"
+    },
+    "public/assets/audio/real-recording-cuts.json": {
+      "sourceSha256": "f86e3d64bf5606f791820c5de36ba901b83271cb3d40918927f5e82f46653b07",
+      "exportSha256": "9fe57d299049966e2acf27a603d3a1d0c53bec04316abe9cf88b4bbabb347551"
+    },
+    "public/assets/audio/soundbible-puck.wav": {
+      "sourceSha256": "2e3b1e1f680762b9b3116c346084de826ddd096854560fc6cb7b16c374896ddc",
+      "exportSha256": "2e3b1e1f680762b9b3116c346084de826ddd096854560fc6cb7b16c374896ddc"
+    },
+    "public/assets/audio/soundbible-stick.wav": {
+      "sourceSha256": "391442338318278b94ca9ead088965ce90548fe17d1ca21ae7f759a9b6d757eb",
+      "exportSha256": "391442338318278b94ca9ead088965ce90548fe17d1ca21ae7f759a9b6d757eb"
+    },
+    "public/assets/stages-v06/arcade.png": {
+      "sourceSha256": "38b23f3123b4cd2308e8b22d661c54eeed3270b1cd8a11a31fb0613b00b36f77",
+      "exportSha256": "38b23f3123b4cd2308e8b22d661c54eeed3270b1cd8a11a31fb0613b00b36f77"
+    },
+    "public/assets/stages-v06/beach.png": {
+      "sourceSha256": "19212d072d416b755c3c07e90f900763ee0dc4dbb078025ce1931c44e620840a",
+      "exportSha256": "19212d072d416b755c3c07e90f900763ee0dc4dbb078025ce1931c44e620840a"
+    },
+    "public/assets/stages-v06/billiards.png": {
+      "sourceSha256": "c98fb98209fb0224ecf9b0c7e2f8a8166489ba1eda50aa5e3d8b814d527bb472",
+      "exportSha256": "c98fb98209fb0224ecf9b0c7e2f8a8166489ba1eda50aa5e3d8b814d527bb472"
+    },
+    "public/assets/stages-v06/classic.png": {
+      "sourceSha256": "48fc29e6b65ebca1e86ba264853b5fff8c6853cd616cf0166fa7b043b7270306",
+      "exportSha256": "48fc29e6b65ebca1e86ba264853b5fff8c6853cd616cf0166fa7b043b7270306"
+    },
+    "public/assets/stages-v06/comic.png": {
+      "sourceSha256": "1daf7eb745fdd7d3650c8757c3181e7c50bb9ed5b368f6114c575a201c66827c",
+      "exportSha256": "1daf7eb745fdd7d3650c8757c3181e7c50bb9ed5b368f6114c575a201c66827c"
+    },
+    "public/assets/stages-v06/generation-prompts.json": {
+      "sourceSha256": "f0182fe188aa93545174fd05434cc61cd484f2f29e0f1fd9fc1e1b2369d9bcdc",
+      "exportSha256": "ed6a9b6f321395764c5a7593277d960488a4d670bd9b0b8927ca29c82219d307"
+    },
+    "public/assets/stages-v06/ice.png": {
+      "sourceSha256": "9e8b9526045b3e125a3ac76915fe93d56e3036c54f109fbbb124eaf08be12c11",
+      "exportSha256": "9e8b9526045b3e125a3ac76915fe93d56e3036c54f109fbbb124eaf08be12c11"
+    },
+    "public/assets/stages-v06/japan.png": {
+      "sourceSha256": "c9852c120b05dd7bf90294408e91e442e96ca272983a5165ce5c074cd211c407",
+      "exportSha256": "c9852c120b05dd7bf90294408e91e442e96ca272983a5165ce5c074cd211c407"
+    },
+    "public/assets/stages-v06/lava.png": {
+      "sourceSha256": "38167ea003c28a73b1501ee95caf952c76f7d9ccf974a9744ee97631557417a3",
+      "exportSha256": "38167ea003c28a73b1501ee95caf952c76f7d9ccf974a9744ee97631557417a3"
+    },
+    "public/assets/stages-v06/neon.png": {
+      "sourceSha256": "50ee1b198bb2a8d93b1349f4076fe185b280c13d7897441c207bc3752b353031",
+      "exportSha256": "50ee1b198bb2a8d93b1349f4076fe185b280c13d7897441c207bc3752b353031"
+    },
+    "public/assets/stages-v06/random-generation-prompt.txt": {
+      "sourceSha256": "98d500c7849cf70f6c41b5c5529e38ddf7178034bf30d2227b0f7256c91ef1c5",
+      "exportSha256": "98d500c7849cf70f6c41b5c5529e38ddf7178034bf30d2227b0f7256c91ef1c5"
+    },
+    "public/assets/stages-v06/random.png": {
+      "sourceSha256": "58eb9767b2c57323d5c685c761a957e12ccd488f624e44e837c35820fdb002bb",
+      "exportSha256": "58eb9767b2c57323d5c685c761a957e12ccd488f624e44e837c35820fdb002bb"
+    },
+    "public/assets/stages-v06/retro.png": {
+      "sourceSha256": "ea29844ba60ba804bd37f8e960d64020b08784131a1d1c33e57d19039e47436a",
+      "exportSha256": "ea29844ba60ba804bd37f8e960d64020b08784131a1d1c33e57d19039e47436a"
+    },
+    "public/assets/stages-v06/space.png": {
+      "sourceSha256": "d10ed6bdaf2c92311aac16168dc66548ec0371b9098005946cb23dc8feb17f15",
+      "exportSha256": "d10ed6bdaf2c92311aac16168dc66548ec0371b9098005946cb23dc8feb17f15"
+    },
+    "public/assets/stages-v06/velvet.png": {
+      "sourceSha256": "4c7d601cbbcd18b3d5253cddf3b7becb1725e653d66ef2560767aa77b5269df3",
+      "exportSha256": "4c7d601cbbcd18b3d5253cddf3b7becb1725e653d66ef2560767aa77b5269df3"
+    },
+    "public/assets/stages.png": {
+      "sourceSha256": "3c7bca984962ddce6561728c4089a2b90356ac93368ab9eec78600bdbbdc01e3",
+      "exportSha256": "3c7bca984962ddce6561728c4089a2b90356ac93368ab9eec78600bdbbdc01e3"
+    },
+    "public/audio.js": {
+      "sourceSha256": "6ac4c4745868189deaf118ff66fbd9091075dad4c8a935dad7e83b5320569425",
+      "exportSha256": "6ac4c4745868189deaf118ff66fbd9091075dad4c8a935dad7e83b5320569425"
+    },
+    "public/config.js": {
+      "sourceSha256": "1c65f247e9e35bcdf37f43f04312e4c0739171e1f7167c279c39b8357397e605",
+      "exportSha256": "9998d37ae11ef6618eddf106c97711ab4a514f93c16af64c34f23e9b0318c981"
+    },
+    "public/effect-selection.js": {
+      "sourceSha256": "d53a04bf3b430cbc4732cc1f2763d8bf228189fa4ad3c27f0e29f4abe7d7d8dc",
+      "exportSha256": "d53a04bf3b430cbc4732cc1f2763d8bf228189fa4ad3c27f0e29f4abe7d7d8dc"
+    },
+    "public/effects-extra.js": {
+      "sourceSha256": "63ab177312d5783241cd5b989918e246e06ea193072af01cf4739f00696add13",
+      "exportSha256": "63ab177312d5783241cd5b989918e246e06ea193072af01cf4739f00696add13"
+    },
+    "public/effects.js": {
+      "sourceSha256": "8f2a94835e08d6f1520febdfb37d8027aeb8b9b95712e2d351a895cb51690ab0",
+      "exportSha256": "8f2a94835e08d6f1520febdfb37d8027aeb8b9b95712e2d351a895cb51690ab0"
+    },
+    "public/game-window.js": {
+      "sourceSha256": "dcbf055c23b69350c7e1ac3034746065d2aa0acd9883a19e6c80e0581b18c7ef",
+      "exportSha256": "dcbf055c23b69350c7e1ac3034746065d2aa0acd9883a19e6c80e0581b18c7ef"
+    },
+    "public/index.html": {
+      "sourceSha256": "55438b113b3da703837370705d0e062a5d59e37b1ccc1cb6abde1f71b7717f5c",
+      "exportSha256": "a1cedfb3417ae45f620d708fec3011dd03b6f1dc4a6acea0027adaefc323568d"
+    },
+    "public/laser-variants.js": {
+      "sourceSha256": "b9518d48aab85b708dace14237081086074f9d940b4ecf046e1398281cb91500",
+      "exportSha256": "b9518d48aab85b708dace14237081086074f9d940b4ecf046e1398281cb91500"
+    },
+    "public/layout.css": {
+      "sourceSha256": "4f329ab39afccf7b8a674a8344249b73e90b17f03a0bc31b2008d8d3441286e3",
+      "exportSha256": "a58ac5e183d97dfe0943e74e669686109c5ee192341c20ddbc3e4209fd530fbb"
+    },
+    "public/mouse-controls.js": {
+      "sourceSha256": "1a9d2952bb1b1e1f06227e5155b0fbeccef533dc15239dcdb68e5bb012940cfc",
+      "exportSha256": "1a9d2952bb1b1e1f06227e5155b0fbeccef533dc15239dcdb68e5bb012940cfc"
+    },
+    "public/physics.js": {
+      "sourceSha256": "944be1fb6cde4a1432330254272ca403f21dc7927b386ab9b1f2290b54c97adb",
+      "exportSha256": "944be1fb6cde4a1432330254272ca403f21dc7927b386ab9b1f2290b54c97adb"
+    },
+    "public/rainbow-smash.js": {
+      "sourceSha256": "806a130280aa79d481df2d2b7a9896aa6c02a36130a3446d696c3fa818393017",
+      "exportSha256": "806a130280aa79d481df2d2b7a9896aa6c02a36130a3446d696c3fa818393017"
+    },
+    "public/style.css": {
+      "sourceSha256": "bf4da2f3424b6fd19800e404a57aebaa23117d86a9fc9b0ab97c46c0d577782e",
+      "exportSha256": "bf4da2f3424b6fd19800e404a57aebaa23117d86a9fc9b0ab97c46c0d577782e"
+    },
+    "data/match-settings.json": {
+      "sourceSha256": "871290024681197845e5cb530f2896b974113634f2642f60aca7df01a5175241",
+      "exportSha256": "dc7d2185926663d8d33bfa84b3e5081011587ee9b289170d27940e9a7ef53969"
+    },
+    "data/random-names.json": {
+      "sourceSha256": "78fc5c769592ff561b2c39e131e8e11f954e39bef53c53a13dc8df78aa66d4b7",
+      "exportSha256": "78fc5c769592ff561b2c39e131e8e11f954e39bef53c53a13dc8df78aa66d4b7"
+    },
+    "data/skins.json": {
+      "sourceSha256": "69e1ffe0f7260bdfb1b677225f541cf54163789009338cfd05b477b2c5ca4473",
+      "exportSha256": "e2ded214cb606060c04091a972db0d0f0e5311745d676ba46b02ee5149191a67"
+    },
+    "data/taglines.json": {
+      "sourceSha256": "c6e5a050cc9039f50351fe7f4896f490a028f30179c884b829f5b575f71a898e",
+      "exportSha256": "c6e5a050cc9039f50351fe7f4896f490a028f30179c884b829f5b575f71a898e"
+    },
+    "baselines/shot-effects-v0.7.json": {
+      "sourceSha256": "7136a13914a0fa162e7858208931013dd860d96a69b30023e73e4ba752a33c12",
+      "exportSha256": "1f1b012ea6c5013148009cf8ecf07bf9ef6ad43da19f122d2ed80968e0ebbbcd"
+    },
+    "scripts/prepare-real-sounds.py": {
+      "sourceSha256": "0760cfcb1976ea494e71be6fb421f6f37d3c92171b685c000ad56d2600285eed",
+      "exportSha256": "0760cfcb1976ea494e71be6fb421f6f37d3c92171b685c000ad56d2600285eed"
+    },
+    "scripts/prepare-comparison-sounds.py": {
+      "sourceSha256": "e9edd3ebaa76ee9ad9e1883d10cf6bc63033156808c00b39845493e2cb5e0048",
+      "exportSha256": "e9edd3ebaa76ee9ad9e1883d10cf6bc63033156808c00b39845493e2cb5e0048"
+    },
+    "tests/cpu-lapses.test.mjs": {
+      "sourceSha256": "c3d2404f227d4f779ac7cccff7f5986603e24d13ba9487a09c299d1f944966f1",
+      "exportSha256": "00e897ef930c3f7a73b1a71d55a92c835635b886bcb5c252a595d11ab00f69f2"
+    },
+    "tests/cpu-levels.test.mjs": {
+      "sourceSha256": "38f9af512e8d11690ca4f32e4eb7c81c0005d00f62e8e401ab86b894a150f1b3",
+      "exportSha256": "89b8ad7af716a7c25e6076d8fbb21932de7fd6ae4261ca8ac331f8199a6690fc"
+    },
+    "tests/cpu-timing.test.mjs": {
+      "sourceSha256": "5e954327545a4774315b0d249c96c3505bcab989eab585fd7cab53353961b7a0",
+      "exportSha256": "5e954327545a4774315b0d249c96c3505bcab989eab585fd7cab53353961b7a0"
+    },
+    "tests/cpu-watch.test.mjs": {
+      "sourceSha256": "4a46a9c09598a91711ae41652b214f41221c97e43b04ecfe7d726ed6d4dfa2cf",
+      "exportSha256": "91cb7e05aa1b394738c85e688168d657f726126007161a121bb71ecff766ea9b"
+    },
+    "tests/cpu.test.mjs": {
+      "sourceSha256": "8e5375c3dca34a066d5bdac47f7cbf932763ea33059281c7eb3338a2a7c5ca08",
+      "exportSha256": "3953f5c55e461db459a883e6152feb2e2ab3cc5ba16385b515c1a8284f222752"
+    },
+    "tests/effect-selection.test.mjs": {
+      "sourceSha256": "c1e70f09e06870ba0494899fb2940d7213f678d6d5fc40e391733f003310d469",
+      "exportSha256": "c1e70f09e06870ba0494899fb2940d7213f678d6d5fc40e391733f003310d469"
+    },
+    "tests/effects-baseline.test.mjs": {
+      "sourceSha256": "1fa3a7fb688d1ba4c35ad38bb23136c2f1fe06329c87cab478bbc82979384d06",
+      "exportSha256": "1fa3a7fb688d1ba4c35ad38bb23136c2f1fe06329c87cab478bbc82979384d06"
+    },
+    "tests/effects-extra.test.mjs": {
+      "sourceSha256": "97530177034888a8b94b4445bcc0a6f40222f3e5eb7d1171894eca0c29e6eab3",
+      "exportSha256": "97530177034888a8b94b4445bcc0a6f40222f3e5eb7d1171894eca0c29e6eab3"
+    },
+    "tests/effects.test.mjs": {
+      "sourceSha256": "3917fa2301165d6ee2fa1c7feb9754ea642a5eb0bc964303170cf8d066420e5d",
+      "exportSha256": "3917fa2301165d6ee2fa1c7feb9754ea642a5eb0bc964303170cf8d066420e5d"
+    },
+    "tests/forfeit.test.mjs": {
+      "sourceSha256": "03e316f5c1329dbe134db50311b4459cd9eda7669e187b903e5549d4e006c7f0",
+      "exportSha256": "03e316f5c1329dbe134db50311b4459cd9eda7669e187b903e5549d4e006c7f0"
+    },
+    "tests/game.test.mjs": {
+      "sourceSha256": "70a10b9632476c6c671ce501a6a6bdd0208a86749f31b9df0b87816b95dbd2c1",
+      "exportSha256": "e7bbc1b3f5f612519d829fac438bbc25281332b7296177559a7eb6ca28864817"
+    },
+    "tests/laser-variants.test.mjs": {
+      "sourceSha256": "2542cbe0a6c8eaa60a10a7da217a42d4dbc96c2fa060a1e9bfaf8916ee69d28d",
+      "exportSha256": "2542cbe0a6c8eaa60a10a7da217a42d4dbc96c2fa060a1e9bfaf8916ee69d28d"
+    },
+    "tests/mouse-controls.test.mjs": {
+      "sourceSha256": "f6814d32d63a1d2f330302603bbe6b58966cca9460600d40050fdc6523f10248",
+      "exportSha256": "f6814d32d63a1d2f330302603bbe6b58966cca9460600d40050fdc6523f10248"
+    },
+    "tests/personal-rules.test.mjs": {
+      "sourceSha256": "033f3fcab40b8f14edb967f27d482052ea0ae511127377388a8b0e41bfddf6f1",
+      "exportSha256": "033f3fcab40b8f14edb967f27d482052ea0ae511127377388a8b0e41bfddf6f1"
+    },
+    "tests/puck-color.test.mjs": {
+      "sourceSha256": "46f679c885d86704ceb6ce4faeabb8e71f24ed87607d83da982382e087785fa5",
+      "exportSha256": "46f679c885d86704ceb6ce4faeabb8e71f24ed87607d83da982382e087785fa5"
+    },
+    "tests/rainbow-smash.test.mjs": {
+      "sourceSha256": "70b5d68a291928ef17ffe59df6cb08a4d172ae72ec194b5fa186941a146be215",
+      "exportSha256": "70b5d68a291928ef17ffe59df6cb08a4d172ae72ec194b5fa186941a146be215"
+    },
+    "tests/server.test.mjs": {
+      "sourceSha256": "9a668ab4b63579e96ad6dd8e1f06e3a7b0b83ea32f891308149819b54615d7d1",
+      "exportSha256": "7e448077dadce9967a539299ec18907d5ceafb9941ee05ae07eeb9af384caafc"
+    },
+    "tests/tactics-score.test.mjs": {
+      "sourceSha256": "062de259bb1ff4144e2b2bd855f0cd944754900c0f9f2e5dba278cb369b7a9ee",
+      "exportSha256": "062de259bb1ff4144e2b2bd855f0cd944754900c0f9f2e5dba278cb369b7a9ee"
+    },
+    "tests/taglines.test.mjs": {
+      "sourceSha256": "e09e32e2f95b61aecb8084c705a818c7c81803b04b4ecbddc3dde3feaca4eb6a",
+      "exportSha256": "e09e32e2f95b61aecb8084c705a818c7c81803b04b4ecbddc3dde3feaca4eb6a"
+    },
+    "tests/wins.test.mjs": {
+      "sourceSha256": "7fbc51db1083aa0799367519afa1447aed495dba53b181e7cb63a6e08a939f2e",
+      "exportSha256": "7fbc51db1083aa0799367519afa1447aed495dba53b181e7cb63a6e08a939f2e"
+    }
+  },
+  "generatedFiles": {
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "about.html": "4c2ae4c14ad514681f20954d098d7a3318ebcb65f7d9489993b12b6516bd2014",
+    "app.js": "7a0c1e7dbc9bf99eb5d6cc6564c45f744924b8f4e66094d5ac10aab921b3b464",
+    "assets/audio/air-dry-01.wav": "0006a47300736f39166a98cd358093cc7a292ae5d160e96118f679d8c25d9b7c",
+    "assets/audio/air-dry-02.wav": "546ad7580f49ff56ba8ecc20608c6b271321df1f8e11b1fe7826d7e1a5a06d68",
+    "assets/audio/air-dry-03.wav": "331432e5e83a5c633cfabcd33f5d60acb5855f0af0c7ff03c74de6a0ef835098",
+    "assets/audio/air-dry-04.wav": "82229223f326f6d787b5fb4f5543d9c19f13d6a88fae3295eb42f739ad281248",
+    "assets/audio/air-hit-01.wav": "dca15baa28861dbdb820e5e99c6b82820a012942020cd1328f46a0354b18502c",
+    "assets/audio/air-hit-02.wav": "4002be584557d3adcc97f06ed28edb4dbe0d6dbcf1745c7053ebf9fa66631ad4",
+    "assets/audio/air-hit-03.wav": "31450857179c18cdc00081c4066107989a3894c14a375132990981896fa43987",
+    "assets/audio/air-hit-04.wav": "b51f0a3ad7fee9333e0099a73ae0078152c5f25a35219d28f9daa81a857e96af",
+    "assets/audio/air-hit-05.wav": "caa38cd577b49b0ab957779d29e69d8ced80cfc4ffef7caa2127490a6e522eeb",
+    "assets/audio/air-hit-06.wav": "dc11dd2025e877e6fcf6a8b2677df70376fb9f0ee91b5e30f44b560be34272cd",
+    "assets/audio/air-hit-07.wav": "206dae22f415c6dcb4e8c2885a3562fb9452a1c4893fcc5ef6b9e4064c3d97ff",
+    "assets/audio/air-hit-08.wav": "9e7879574786b9436329773aaa9b18e5fe1901297e300b833cdee00aa3eeb5fe",
+    "assets/audio/air-hockey-krb21-118604.mp3": "24d9c1519dc42324d662e945e8a5137f3b49003cea9fd234a50ea5fcb74b15d3",
+    "assets/audio/budgetpixel-air-01.wav": "b94da074c97aebbfe0a486a0dae3f605fc91f8f719ba1eece61302cd86bebbc6",
+    "assets/audio/budgetpixel-air-02.wav": "9ddbd149d0f031b47b9b1787cfae307128afa108f27b3e2c9bedfc08fd14d4ea",
+    "assets/audio/comparison-cuts.json": "f9641c05202db95db8cbdc203a088408717aabeff0377036db52bf6e933c7c15",
+    "assets/audio/CREDITS.md": "acdc6122d50c04789d80456833437b0ee20d5116f764791826bd08a07ec17448",
+    "assets/audio/goal-clunk-a.wav": "def521cd2c80b7fef327fe8580f8e404ab625e6076b621f4ed659d533dece191",
+    "assets/audio/goal-clunk-b.wav": "20384d64ef8264ecf56dcb456f9d43f24d7c0aec86559f8a1d39bc90eb35ec56",
+    "assets/audio/highDown.ogg": "cdbea353b2e435b4f869c7b045af81079c5d5eb81cfbbc805013ccc3a7a0f36a",
+    "assets/audio/highUp.ogg": "cbc1c3c7ccf5d7903818144a4c3f5b2ed2385095792f29d8d7c76360ba4fa559",
+    "assets/audio/impactMetal_light_000.ogg": "33b5e6e37c6e9d54e07bf5a89b12c76e879f40c1ea83cdd82714df1d6f9fec6d",
+    "assets/audio/impactMetal_light_001.ogg": "fba69c467ddd85da7b1d82e259f936b876d9ba6a3d6f1b24bdd10468e46bfe08",
+    "assets/audio/impactMetal_light_002.ogg": "25a96f90a9a1f88a531e824e126f0519504625e5635e65a72e4f31611428db29",
+    "assets/audio/impactMetal_light_003.ogg": "92d5db6bfc672d9dc1b4f390b2900504f013187fa36335472554fafefa9050b1",
+    "assets/audio/impactPlate_light_000.ogg": "6e797cf8a5bfc52d7ed5eb47c227974c1cf2a674954fec5b539cea7d62c7282c",
+    "assets/audio/impactWood_heavy_000.ogg": "15ff82332f342c30e469215539e1cc57e11b221aa2cf7e11e811d313a9927f3d",
+    "assets/audio/impactWood_light_000.ogg": "eb45e35b4bed784d3f120de4afec4b0d6ac09d9e143cce8cfcb7d739e1b1f3c3",
+    "assets/audio/impactWood_light_001.ogg": "4b76bf3ccc8e60d19188f3165b778a7817786faa6887c55d9049bcbeef3b425f",
+    "assets/audio/impactWood_light_002.ogg": "b183cf7a5bd783817e0e4b82af34ac6658fa1927049089dadc8b15c2ecc771dc",
+    "assets/audio/impactWood_medium_000.ogg": "1723a9fd25103ed41af06054814e84e65f4a772bac86ab2dc927da93d9592ff5",
+    "assets/audio/impactWood_medium_001.ogg": "15271dbe8e2872dbb0ff1aeb7b12b2d2b92b7c1951c88532b9ab9158c36dfc73",
+    "assets/audio/jingles_HIT00.ogg": "e23d8c9e971a4e34484bc834a3ec1d560811ec6f5edd5efa2c61e583c18c504a",
+    "assets/audio/jingles_HIT01.ogg": "ddca9df332d7cdab525bbbe62ca26e9d61aa64bfa626d9516d5c53eb91c45322",
+    "assets/audio/jingles_HIT02.ogg": "1ebd52ba108c0e749d2814c54e44bba6c39d111fa30d025fddfac70538e0e241",
+    "assets/audio/jingles_NES02.ogg": "2c0b9dcc14bdae6d66ecb40d0351e61b4b2fc570e7b13821974e2057f07c93e7",
+    "assets/audio/jingles_NES03.ogg": "64b146c4b737d4a74d60316554bdb667cfbe20681a71722948c5f70f83af7d92",
+    "assets/audio/laser1.ogg": "0bf468769b48a834dc1c6e38e457f2c71159b010225a9aedf84316795e8cc3e5",
+    "assets/audio/laser2.ogg": "50470d64f9397855e5d9a334484da9c5232b3e0524c52f088b8a73822bd89f45",
+    "assets/audio/laser3.ogg": "caede23d2b65299acdc4e9cab16d06c247d69c7ca1c74caa5e9da21cbdbc1400",
+    "assets/audio/laser4.ogg": "13f34561740aadbd3438b971dfe248cf56ea09d333eb7a0278561e09e27c3557",
+    "assets/audio/laser5.ogg": "8d7b30b35112bedf4dd6f03796a5f33af85414b02947187e4063819fd80cf3e2",
+    "assets/audio/laser6.ogg": "cec018b67fdd9a857e692be0596cec070617346853e5341c3e2df3aae950473d",
+    "assets/audio/License-digital.txt": "48ac15b3c34deb0a7cddc80a43302654dc9e4cb23dad38fc620a6f70be2d55cd",
+    "assets/audio/License-impact.txt": "ea4317db185cf401cb496ad5bb370cf1eee4a0a234c4df2515e37dacab12bcab",
+    "assets/audio/License-jingles.txt": "c2d2cc87aa90fa7c5ad7b8280f8c771ccc75dc1c7da825a44423b4d77aac9b18",
+    "assets/audio/powerUp1.ogg": "8c361b624b560c0bc30ea3063b71212bc30caebf425c9df2481c13b25561485c",
+    "assets/audio/powerUp2.ogg": "83786b43d828a399e14ac20604b63a60ca05385977f5477d00304c2adc696204",
+    "assets/audio/powerUp3.ogg": "59e7591f7a068882767bc1fd61edabf479b78787466d3a70bc49dfa0533777d2",
+    "assets/audio/powerUp4.ogg": "df6992456056af760815460b66d2ca1c3a07c200cca26325db5820b90104d177",
+    "assets/audio/real-recording-cuts.json": "9fe57d299049966e2acf27a603d3a1d0c53bec04316abe9cf88b4bbabb347551",
+    "assets/audio/soundbible-puck.wav": "2e3b1e1f680762b9b3116c346084de826ddd096854560fc6cb7b16c374896ddc",
+    "assets/audio/soundbible-stick.wav": "391442338318278b94ca9ead088965ce90548fe17d1ca21ae7f759a9b6d757eb",
+    "assets/stages-v06/arcade.png": "38b23f3123b4cd2308e8b22d661c54eeed3270b1cd8a11a31fb0613b00b36f77",
+    "assets/stages-v06/beach.png": "19212d072d416b755c3c07e90f900763ee0dc4dbb078025ce1931c44e620840a",
+    "assets/stages-v06/billiards.png": "c98fb98209fb0224ecf9b0c7e2f8a8166489ba1eda50aa5e3d8b814d527bb472",
+    "assets/stages-v06/classic.png": "48fc29e6b65ebca1e86ba264853b5fff8c6853cd616cf0166fa7b043b7270306",
+    "assets/stages-v06/comic.png": "1daf7eb745fdd7d3650c8757c3181e7c50bb9ed5b368f6114c575a201c66827c",
+    "assets/stages-v06/generation-prompts.json": "ed6a9b6f321395764c5a7593277d960488a4d670bd9b0b8927ca29c82219d307",
+    "assets/stages-v06/ice.png": "9e8b9526045b3e125a3ac76915fe93d56e3036c54f109fbbb124eaf08be12c11",
+    "assets/stages-v06/japan.png": "c9852c120b05dd7bf90294408e91e442e96ca272983a5165ce5c074cd211c407",
+    "assets/stages-v06/lava.png": "38167ea003c28a73b1501ee95caf952c76f7d9ccf974a9744ee97631557417a3",
+    "assets/stages-v06/neon.png": "50ee1b198bb2a8d93b1349f4076fe185b280c13d7897441c207bc3752b353031",
+    "assets/stages-v06/random-generation-prompt.txt": "98d500c7849cf70f6c41b5c5529e38ddf7178034bf30d2227b0f7256c91ef1c5",
+    "assets/stages-v06/random.png": "58eb9767b2c57323d5c685c761a957e12ccd488f624e44e837c35820fdb002bb",
+    "assets/stages-v06/retro.png": "ea29844ba60ba804bd37f8e960d64020b08784131a1d1c33e57d19039e47436a",
+    "assets/stages-v06/space.png": "d10ed6bdaf2c92311aac16168dc66548ec0371b9098005946cb23dc8feb17f15",
+    "assets/stages-v06/velvet.png": "4c7d601cbbcd18b3d5253cddf3b7becb1725e653d66ef2560767aa77b5269df3",
+    "assets/stages.png": "3c7bca984962ddce6561728c4089a2b90356ac93368ab9eec78600bdbbdc01e3",
+    "audio.js": "ccaae2b6eda1c64347b9424f3c566fe39d5e8ef88bdb306c1ca1423efd4e02a3",
+    "config.js": "9998d37ae11ef6618eddf106c97711ab4a514f93c16af64c34f23e9b0318c981",
+    "demo-data.js": "5b0fd7e5738e4fd67116b6b6fbe5aca0b8a1734461e6fd37107c885ae8b64b80",
+    "demo.css": "61617722140d79d8e603659147cf5d2e07576477a72519c6e54a47b7e750e0d2",
+    "effect-selection.js": "d53a04bf3b430cbc4732cc1f2763d8bf228189fa4ad3c27f0e29f4abe7d7d8dc",
+    "effects-extra.js": "63ab177312d5783241cd5b989918e246e06ea193072af01cf4739f00696add13",
+    "effects.js": "8f2a94835e08d6f1520febdfb37d8027aeb8b9b95712e2d351a895cb51690ab0",
+    "game-window.js": "2455d9d4dd561be6b486ed0557bee3199eb51f6a578348c63c1eb8f3530b9679",
+    "index.html": "470236dea3bc73c2a627221193f7a1fb0f4c4428a17c29d2197000b9346d6fb1",
+    "laser-variants.js": "b9518d48aab85b708dace14237081086074f9d940b4ecf046e1398281cb91500",
+    "layout.css": "a58ac5e183d97dfe0943e74e669686109c5ee192341c20ddbc3e4209fd530fbb",
+    "mouse-controls.js": "1a9d2952bb1b1e1f06227e5155b0fbeccef533dc15239dcdb68e5bb012940cfc",
+    "physics.js": "944be1fb6cde4a1432330254272ca403f21dc7927b386ab9b1f2290b54c97adb",
+    "rainbow-smash.js": "806a130280aa79d481df2d2b7a9896aa6c02a36130a3446d696c3fa818393017",
+    "style.css": "bf4da2f3424b6fd19800e404a57aebaa23117d86a9fc9b0ab97c46c0d577782e"
+  }
+}

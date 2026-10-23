@@ -1,0 +1,22 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile,writeFile,mkdir,mkdtemp,cp} from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {spawnSync} from 'node:child_process';
+const root=fileURLToPath(new URL('../',import.meta.url));
+test('差分取り込みは変更分だけ反映し、個別編集・変換失敗・私用接続情報を公開前に止める',async()=>{
+  await mkdir(path.join(root,'.local'),{recursive:true});
+  const temp=await mkdtemp(path.join(root,'.local/update-test-')),source=path.join(temp,'source'),project=path.join(temp,'project');
+  await cp(path.join(root,'self-host'),source,{recursive:true});await mkdir(project,{recursive:true});await cp(path.join(root,'scripts'),path.join(project,'scripts'),{recursive:true});
+  const originalApp="import {gameUrl} from './game-links.js';\n"+"$('othelloLink').href=gameUrl('othello',location.href);\n"+await readFile(path.join(source,'public/app.js'),'utf8');await writeFile(path.join(source,'public/app.js'),originalApp);
+  const run=(apply=false)=>spawnSync(process.execPath,[path.join(project,'scripts/sync-upstream.mjs'),'--source',source,...(apply?['--apply']:[])],{encoding:'utf8'});
+  let result=run(true);assert.equal(result.status,0,result.stderr);
+  result=run();assert.equal(result.status,0,result.stderr);assert.equal(JSON.parse(result.stdout).count,0);assert.equal(JSON.parse(result.stdout).demoCount,0);
+  const sourcePhysics=path.join(source,'public/physics.js'),targetPhysics=path.join(project,'self-host/public/physics.js');
+  await writeFile(sourcePhysics,(await readFile(sourcePhysics,'utf8'))+'\n// fixture update\n');result=run(true);assert.equal(result.status,0,result.stderr);assert.deepEqual(JSON.parse(result.stdout).changed,['public/physics.js']);assert.deepEqual(JSON.parse(result.stdout).demoChanged,['physics.js']);
+  const manifestBefore=await readFile(path.join(project,'UPSTREAM.json'),'utf8');
+  await writeFile(targetPhysics,(await readFile(targetPhysics,'utf8'))+'\n// public-only edit\n');result=run(true);assert.notEqual(result.status,0);assert.match(result.stderr,/衝突/);assert.equal(await readFile(path.join(project,'UPSTREAM.json'),'utf8'),manifestBefore);
+  await cp(sourcePhysics,targetPhysics);await writeFile(path.join(source,'public/app.js'),originalApp.replace('async function api(route,data){','async function renamedApi(route,data){'));result=run(true);assert.notEqual(result.status,0);assert.match(result.stderr,/変換元/);assert.equal(await readFile(path.join(project,'UPSTREAM.json'),'utf8'),manifestBefore);
+  await writeFile(path.join(source,'public/app.js'),originalApp);await writeFile(path.join(source,'data/private.json'),JSON.stringify({host:['192','168','1','9'].join('.')}));result=run(true);assert.notEqual(result.status,0);assert.match(result.stderr,/公開できない/);assert.equal(await readFile(path.join(project,'UPSTREAM.json'),'utf8'),manifestBefore);
+});

@@ -1,0 +1,17 @@
+{
+  "name": "online-airhockey",
+  "recordVersion": "1.4-record",
+  "created": "2026-10-23",
+  "sourceVersion": "1.4",
+  "gameplayBaseline": "1.3",
+  "pages": "docs",
+  "selfHost": "self-host",
+  "content": {"stages":12,"randomStageTile":1,"cpuLevels":10,"shotEffects":21,"soundCandidates":46,"participants":5},
+  "protectedEffectsBaseline": "0.7",
+  "upstreamManifest": "UPSTREAM.json",
+  "authorServerLinked": false,
+  "githubUploaded": false,
+  "repositoryUrl": "https://github.com/dybo46/online-airhockey",
+  "demoUrl": "https://dybo46.github.io/online-airhockey/",
+  "license": "not yet selected; third-party audio keeps its individual licenses"
+}

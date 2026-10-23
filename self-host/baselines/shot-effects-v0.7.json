@@ -1,0 +1,23 @@
+{
+  "version": "0.7",
+  "established": "2026-10-22",
+  "sourceArchive": "Original v0.7 archive is not distributed; rendering hash preserved.",
+  "sourceFile": "public/effects.js",
+  "sha256": "8f2a94835e08d6f1520febdfb37d8027aeb8b9b95712e2d351a895cb51690ab0",
+  "styles": [
+    "afterimage",
+    "laser",
+    "lightning",
+    "flame",
+    "comet",
+    "rainbow",
+    "stars",
+    "rings",
+    "comic",
+    "helix",
+    "ice",
+    "smoke",
+    "confetti"
+  ],
+  "policy": "Keep existing v0.7 rendering unchanged. Add new effects in separate modules. Preserve original hit/draw timing and normal/powered applicability. Change existing effects only on explicit user instruction."
+}
